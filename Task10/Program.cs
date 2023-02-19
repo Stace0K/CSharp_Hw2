@@ -1,10 +1,10 @@
 ﻿//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
-int D(string message)
+int D(string arg)
 {
-    Console.Write(message);
-    string m = Console.ReadLine();
-    int result = Convert.ToInt32(m);
+    Console.Write(arg);
+    string value = Console.ReadLine()!; //Разрешение проблемы с NULL через ! (null forgiving)
+    int result = Convert.ToInt32(value);
     return result;
 }
 
